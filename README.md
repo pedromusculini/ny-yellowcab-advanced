@@ -379,6 +379,6 @@ If you use this project in your research or work, please cite:
 ---
 
 **Author**: Pedro Musculini  
-**Contact**: [Your contact information]  
+**Contact**: [pedromusculini@gmail.com]  
 **Project**: NYC Taxi Data Enrichment Pipeline  
 **Date**: September 15, 2025
