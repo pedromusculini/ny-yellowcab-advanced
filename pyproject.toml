@@ -1,0 +1,121 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nyc-taxi-pipeline"
+version = "1.0.0"
+description = "Advanced feature engineering pipeline for NYC yellow taxi data"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+authors = [
+    {name = "Pedro Musculini", email = "pedro.musculini@email.com"},
+]
+maintainers = [
+    {name = "Pedro Musculini", email = "pedro.musculini@email.com"},
+]
+keywords = [
+    "nyc",
+    "taxi",
+    "data-analysis",
+    "feature-engineering",
+    "visualization",
+    "pandas",
+    "matplotlib",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "pytest>=7.0.0",
+    "reportlab>=4.0.0",
+    "markdown>=3.4.0",
+    "Pillow>=10.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter>=1.0.0",
+    "ipykernel>=6.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+docs = [
+    "sphinx>=5.0.0",
+    "sphinx-rtd-theme>=1.2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/pedro-musculini/nyc-taxi-pipeline"
+Repository = "https://github.com/pedro-musculini/nyc-taxi-pipeline"
+Issues = "https://github.com/pedro-musculini/nyc-taxi-pipeline/issues"
+Documentation = "https://github.com/pedro-musculini/nyc-taxi-pipeline#readme"
+
+[tool.setuptools]
+packages = ["scripts"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+scripts = ["*.py"]
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+
+[[tool.mypy.overrides]]
+module = [
+    "matplotlib.*",
+    "seaborn.*",
+    "pandas.*",
+    "numpy.*",
+]
+ignore_missing_imports = true
