@@ -10,7 +10,13 @@ A professionally formatted PDF version of the article is also available:
 **Date:** September 15, 2025
 
 The PDF includes:
-- ✅ **Professional logo** at the top
+- ✅ **Professional ---
+
+**Author**: Pedro Musculini  
+**Email**: pedromusculini@gmail.com  
+**LinkedIn**: [pedro-musculini](https://linkedin.com/in/pedro-musculini)  
+**Project**: NY Yellow Cab Advanced Data Pipeline  
+**Date**: September 15, 2025 at the top
 - ✅ **Academic formatting** with proper styling
 - ✅ **All 5 visualization charts** with detailed captions
 - ✅ **Author signature** and publication information
@@ -83,8 +89,8 @@ python scripts/create_logo.py
 ### Quick Start
 ```bash
 # Clone the repository
-git clone https://github.com/pedro-musculini/nyc-taxi-pipeline.git
-cd nyc-taxi-pipeline
+git clone https://github.com/pedromusculini/ny-yellowcab-advanced.git
+cd ny-yellowcab-advanced
 
 # Create virtual environment
 python -m venv venv
@@ -355,11 +361,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you use this project in your research or work, please cite:
 
 ```bibtex
-@software{musculini_nyc_taxi_pipeline_2025,
+@software{musculini_ny_yellowcab_advanced_2025,
   author = {Musculini, Pedro},
-  title = {NYC Taxi Data Enrichment Pipeline},
+  title = {NY Yellow Cab Advanced Data Pipeline},
   year = {2025},
-  url = {https://github.com/pedro-musculini/nyc-taxi-pipeline},
+  url = {https://github.com/pedromusculini/ny-yellowcab-advanced},
   version = {1.0.0}
 }
 ```

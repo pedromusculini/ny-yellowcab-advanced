@@ -22,7 +22,7 @@ def markdown_to_pdf_with_signature(input_md_file, output_pdf_file, author_name="
 **Author:** {author_name}
 **Date:** September 15, 2025
 **Project:** NYC Taxi Data Enrichment Pipeline
-**Contact:** [Your contact information here]
+**Contact:** pedromusculini@gmail.com | [LinkedIn: pedro-musculini](https://linkedin.com/in/pedro-musculini)
 
 *This article was created as part of the NYC Taxi Data Enrichment Pipeline project, demonstrating advanced feature engineering techniques for urban transportation analytics.*
 """

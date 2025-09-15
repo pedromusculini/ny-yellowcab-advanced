@@ -12,14 +12,14 @@ with open(os.path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name="nyc-taxi-pipeline",
+    name="ny-yellowcab-advanced",
     version="1.0.0",
     author="Pedro Musculini",
-    author_email="pedro.musculini@email.com",
+    author_email="pedromusculini@gmail.com",
     description="Advanced feature engineering pipeline for NYC yellow taxi data",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pedro-musculini/nyc-taxi-pipeline",
+    url="https://github.com/pedromusculini/ny-yellowcab-advanced",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -59,7 +59,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "nyc-taxi-pipeline=scripts.clean_curate:main",
+            "ny-yellowcab-advanced=scripts.clean_curate:main",
         ],
     },
     include_package_data=True,
@@ -68,8 +68,8 @@ setup(
     },
     keywords="nyc taxi data analysis feature engineering visualization pandas matplotlib",
     project_urls={
-        "Bug Reports": "https://github.com/pedro-musculini/nyc-taxi-pipeline/issues",
-        "Source": "https://github.com/pedro-musculini/nyc-taxi-pipeline",
-        "Documentation": "https://github.com/pedro-musculini/nyc-taxi-pipeline#readme",
+        "Bug Reports": "https://github.com/pedromusculini/ny-yellowcab-advanced/issues",
+        "Source": "https://github.com/pedromusculini/ny-yellowcab-advanced",
+        "Documentation": "https://github.com/pedromusculini/ny-yellowcab-advanced#readme",
     },
 )

@@ -3,17 +3,17 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "nyc-taxi-pipeline"
+name = "ny-yellowcab-advanced"
 version = "1.0.0"
 description = "Advanced feature engineering pipeline for NYC yellow taxi data"
 readme = "README.md"
 license = {file = "LICENSE"}
 requires-python = ">=3.11"
 authors = [
-    {name = "Pedro Musculini", email = "pedro.musculini@email.com"},
+    {name = "Pedro Musculini", email = "pedromusculini@gmail.com"},
 ]
 maintainers = [
-    {name = "Pedro Musculini", email = "pedro.musculini@email.com"},
+    {name = "Pedro Musculini", email = "pedromusculini@gmail.com"},
 ]
 keywords = [
     "nyc",
@@ -61,10 +61,10 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/pedro-musculini/nyc-taxi-pipeline"
-Repository = "https://github.com/pedro-musculini/nyc-taxi-pipeline"
-Issues = "https://github.com/pedro-musculini/nyc-taxi-pipeline/issues"
-Documentation = "https://github.com/pedro-musculini/nyc-taxi-pipeline#readme"
+Homepage = "https://github.com/pedromusculini/ny-yellowcab-advanced"
+Repository = "https://github.com/pedromusculini/ny-yellowcab-advanced"
+Issues = "https://github.com/pedromusculini/ny-yellowcab-advanced/issues"
+Documentation = "https://github.com/pedromusculini/ny-yellowcab-advanced#readme"
 
 [tool.setuptools]
 packages = ["scripts"]

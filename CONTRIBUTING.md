@@ -12,8 +12,8 @@ Thank you for your interest in contributing to the NYC Taxi Data Enrichment Pipe
 ### 2. Development Setup
 ```bash
 # Clone your fork
-git clone https://github.com/your-username/nyc-taxi-pipeline.git
-cd nyc-taxi-pipeline
+git clone https://github.com/your-username/ny-yellowcab-advanced.git
+cd ny-yellowcab-advanced
 
 # Create virtual environment
 python -m venv venv
